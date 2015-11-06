@@ -27,10 +27,10 @@ class MainViewController: UIViewController {
     
     // MARK: Outlets
     
-    @IBOutlet private weak var labelNumbers: UILabel!
-    
     
     // MARK: Variables & properties
+    
+    private var labelNumbers: UILabel!
     
     
     // MARK: Public methods
@@ -46,11 +46,24 @@ class MainViewController: UIViewController {
         
         // Initialize numbers label
         
+        labelNumbers = UILabel()
+        labelNumbers ~> view.bounds ~> view
+        
         labelNumbers.numberOfLines = 0
+        labelNumbers.textAlignment = .Center
         
         let collectionOfExampleExpressions = exampleExpressions()
         let textForLabelNumbers = collectionOfExampleExpressions.joinWithSeparator("\n\n")
         labelNumbers.text = textForLabelNumbers
+    }
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        
+        
+        // Update numbers label
+        
+        labelNumbers ~> view.bounds
     }
     
     override func didReceiveMemoryWarning() {

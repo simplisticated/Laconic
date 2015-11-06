@@ -7,7 +7,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="LaconicDemo" customModuleProvider="target">
             <connections>
-                <outlet property="labelNumbers" destination="rmM-J7-vjR" id="l9u-u6-Hsq"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -15,24 +14,9 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="√4 = ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rmM-J7-vjR">
-                    <rect key="frame" x="20" y="20" width="560" height="560"/>
-                    <animations/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-            </subviews>
             <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-            <constraints>
-                <constraint firstItem="rmM-J7-vjR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="EF7-Aj-pxs"/>
-                <constraint firstItem="rmM-J7-vjR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="HjY-rp-rTv"/>
-                <constraint firstAttribute="bottom" secondItem="rmM-J7-vjR" secondAttribute="bottom" constant="20" id="nhb-yO-uwQ"/>
-                <constraint firstAttribute="trailing" secondItem="rmM-J7-vjR" secondAttribute="trailing" constant="20" id="wuI-CX-6WF"/>
-            </constraints>
-            <point key="canvasLocation" x="223" y="251"/>
+            <point key="canvasLocation" x="214" y="281"/>
         </view>
     </objects>
 </document>

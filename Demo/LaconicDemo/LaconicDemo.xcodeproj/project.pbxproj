@@ -15,6 +15,7 @@
 		69723FB01BED4939008D8D3D /* OperatorsSqrt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69723FAF1BED4939008D8D3D /* OperatorsSqrt.swift */; };
 		69723FB21BED4AE7008D8D3D /* OperatorsEquality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69723FB11BED4AE7008D8D3D /* OperatorsEquality.swift */; };
 		69723FB41BED4E05008D8D3D /* OperatorsSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69723FB31BED4E05008D8D3D /* OperatorsSum.swift */; };
+		69723FB61BED6D6D008D8D3D /* OperatorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69723FB51BED6D6D008D8D3D /* OperatorsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		69723FAF1BED4939008D8D3D /* OperatorsSqrt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperatorsSqrt.swift; sourceTree = "<group>"; };
 		69723FB11BED4AE7008D8D3D /* OperatorsEquality.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperatorsEquality.swift; sourceTree = "<group>"; };
 		69723FB31BED4E05008D8D3D /* OperatorsSum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperatorsSum.swift; sourceTree = "<group>"; };
+		69723FB51BED6D6D008D8D3D /* OperatorsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperatorsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				69723FAF1BED4939008D8D3D /* OperatorsSqrt.swift */,
 				69723FB11BED4AE7008D8D3D /* OperatorsEquality.swift */,
 				69723FB31BED4E05008D8D3D /* OperatorsSum.swift */,
+				69723FB51BED6D6D008D8D3D /* OperatorsView.swift */,
 			);
 			path = Operators;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69723FB61BED6D6D008D8D3D /* OperatorsView.swift in Sources */,
 				69723F911BED443D008D8D3D /* AppDelegate.swift in Sources */,
 				69723FA71BED44B6008D8D3D /* MainViewController.swift in Sources */,
 				69723FB01BED4939008D8D3D /* OperatorsSqrt.swift in Sources */,
