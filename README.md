@@ -20,7 +20,87 @@ or
 
 ## Usage
 
+### Square roots
 
+```swift
+/*
+ * Square root of 1st degree.
+ */
+
+let someNumber = 4
+let squareRoot = √someNumber                  // 2
+
+
+/*
+ * Square root of 3rd degree.
+ */
+ 
+let anotherSquareRoot = √√√65536              // 4
+
+
+/*
+ * Square root of 4th degree.
+ */
+
+let oneMoreSquareRoot = √√√√(124500 + 3500)   // 2.085454039791327
+
+```
+
+### Equality
+
+```swift
+/*
+ * You can use ≤ operator instead of <=, and ≥ instead of >=
+ */
+
+let eightIsMoreOrEqualToHalf = 8 ≥ 0.5            // true
+
+let oneIsMoreOrEqualToSeven = 1 ≥ 7               // false
+
+let twentyFourIsLessOrEqualToNinety = 24 ≤ 90     // true
+```
+
+### Sum
+
+```swift
+/*
+ * Example of sum of several numbers.
+ */
+
+let numbers = [
+    8,
+    241,
+    382,
+    90
+]
+
+let sumOfNumbers = ∑numbers            // 721
+
+
+/*
+ * Also, you can get sum of strings.
+ */
+
+let sumOfStrings = ∑["a", "b", "c"]    // abc
+
+
+/*
+ * If you use ∑ operator with array of UIView objects,
+ * you will get another UIView,
+ * which is a superview for those elements in array.
+ * In other words, each view in array will be added to container as superview
+ * and finally the container will be returned as a result of operation.
+ */
+
+let view1 = UIView(frame: CGRect(x: 0.0, y: 0.0, width: 20.0, height: 20.0))
+view1.backgroundColor = .greenColor()
+
+let view2 = UIView(frame: CGRect(x: 20.0, y: 0.0, width: 20.0, height: 20.0))
+view2.backgroundColor = .blueColor()
+
+let container = ∑[view1, view2]
+
+```
 
 ## License
 
