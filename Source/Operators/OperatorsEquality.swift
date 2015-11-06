@@ -16,15 +16,15 @@ import Foundation
 
 infix operator ≤ { }
 
-func ≤ (left: Int, right: Int) -> Bool {
+public func ≤ (left: Int, right: Int) -> Bool {
     return left <= right
 }
 
-func ≤ (left: Float, right: Float) -> Bool {
+public func ≤ (left: Float, right: Float) -> Bool {
     return left <= right
 }
 
-func ≤ (left: Double, right: Double) -> Bool {
+public func ≤ (left: Double, right: Double) -> Bool {
     return left <= right
 }
 
@@ -37,15 +37,15 @@ func ≤ (left: Double, right: Double) -> Bool {
 
 infix operator ≥ { }
 
-func ≥ (left: Int, right: Int) -> Bool {
+public func ≥ (left: Int, right: Int) -> Bool {
     return left >= right
 }
 
-func ≥ (left: Float, right: Float) -> Bool {
+public func ≥ (left: Float, right: Float) -> Bool {
     return left >= right
 }
 
-func ≥ (left: Double, right: Double) -> Bool {
+public func ≥ (left: Double, right: Double) -> Bool {
     return left >= right
 }
 

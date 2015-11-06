@@ -18,7 +18,7 @@ import UIKit
 
 prefix operator ∑ { }
 
-prefix func ∑ (numbers: [Int]) -> Int {
+public prefix func ∑ (numbers: [Int]) -> Int {
     var sum: Int = 0
     
     for item in numbers {
@@ -28,7 +28,7 @@ prefix func ∑ (numbers: [Int]) -> Int {
     return sum
 }
 
-prefix func ∑ (numbers: [Float]) -> Float {
+public prefix func ∑ (numbers: [Float]) -> Float {
     var sum: Float = 0.0
     
     for item in numbers {
@@ -38,7 +38,7 @@ prefix func ∑ (numbers: [Float]) -> Float {
     return sum
 }
 
-prefix func ∑ (numbers: [Double]) -> Double {
+public prefix func ∑ (numbers: [Double]) -> Double {
     var sum: Double = 0.0
     
     for item in numbers {
@@ -48,7 +48,7 @@ prefix func ∑ (numbers: [Double]) -> Double {
     return sum
 }
 
-prefix func ∑ (strings: [String]) -> String {
+public prefix func ∑ (strings: [String]) -> String {
     var resultString = ""
     
     for item in strings {
@@ -58,7 +58,7 @@ prefix func ∑ (strings: [String]) -> String {
     return resultString
 }
 
-prefix func ∑ (subviews: [UIView]) -> UIView {
+public prefix func ∑ (subviews: [UIView]) -> UIView {
     let resultView = UIView()
     
     for item in subviews {

@@ -16,17 +16,17 @@ import Foundation
 
 prefix operator √ { }
 
-prefix func √ (number: Int) -> Double {
+public prefix func √ (number: Int) -> Double {
     let doubleNumber = Double(number)
     return sqrt(doubleNumber)
 }
 
-prefix func √ (number: Float) -> Double {
+public prefix func √ (number: Float) -> Double {
     let doubleNumber = Double(number)
     return sqrt(doubleNumber)
 }
 
-prefix func √ (number: Double) -> Double {
+public prefix func √ (number: Double) -> Double {
     return sqrt(number)
 }
 
@@ -39,15 +39,15 @@ prefix func √ (number: Double) -> Double {
 
 prefix operator √√ { }
 
-prefix func √√ (number: Int) -> Double {
+public prefix func √√ (number: Int) -> Double {
     return sqrt(√number)
 }
 
-prefix func √√ (number: Float) -> Double {
+public prefix func √√ (number: Float) -> Double {
     return sqrt(√number)
 }
 
-prefix func √√ (number: Double) -> Double {
+public prefix func √√ (number: Double) -> Double {
     return sqrt(√number)
 }
 
@@ -60,15 +60,15 @@ prefix func √√ (number: Double) -> Double {
 
 prefix operator √√√ { }
 
-prefix func √√√ (number: Int) -> Double {
+public prefix func √√√ (number: Int) -> Double {
     return sqrt(√√number)
 }
 
-prefix func √√√ (number: Float) -> Double {
+public prefix func √√√ (number: Float) -> Double {
     return sqrt(√√number)
 }
 
-prefix func √√√ (number: Double) -> Double {
+public prefix func √√√ (number: Double) -> Double {
     return sqrt(√√number)
 }
 
@@ -81,15 +81,15 @@ prefix func √√√ (number: Double) -> Double {
 
 prefix operator √√√√ { }
 
-prefix func √√√√ (number: Int) -> Double {
+public prefix func √√√√ (number: Int) -> Double {
     return sqrt(√√√number)
 }
 
-prefix func √√√√ (number: Float) -> Double {
+public prefix func √√√√ (number: Float) -> Double {
     return sqrt(√√√number)
 }
 
-prefix func √√√√ (number: Double) -> Double {
+public prefix func √√√√ (number: Double) -> Double {
     return sqrt(√√√number)
 }
 
@@ -102,15 +102,15 @@ prefix func √√√√ (number: Double) -> Double {
 
 prefix operator √√√√√ { }
 
-prefix func √√√√√ (number: Int) -> Double {
+public prefix func √√√√√ (number: Int) -> Double {
     return sqrt(√√√√number)
 }
 
-prefix func √√√√√ (number: Float) -> Double {
+public prefix func √√√√√ (number: Float) -> Double {
     return sqrt(√√√√number)
 }
 
-prefix func √√√√√ (number: Double) -> Double {
+public prefix func √√√√√ (number: Double) -> Double {
     return sqrt(√√√√number)
 }
 
@@ -123,15 +123,15 @@ prefix func √√√√√ (number: Double) -> Double {
 
 prefix operator √√√√√√ { }
 
-prefix func √√√√√√ (number: Int) -> Double {
+public prefix func √√√√√√ (number: Int) -> Double {
     return sqrt(√√√√√number)
 }
 
-prefix func √√√√√√ (number: Float) -> Double {
+public prefix func √√√√√√ (number: Float) -> Double {
     return sqrt(√√√√√number)
 }
 
-prefix func √√√√√√ (number: Double) -> Double {
+public prefix func √√√√√√ (number: Double) -> Double {
     return sqrt(√√√√√number)
 }
 
@@ -144,15 +144,15 @@ prefix func √√√√√√ (number: Double) -> Double {
 
 prefix operator √√√√√√√ { }
 
-prefix func √√√√√√√ (number: Int) -> Double {
+public prefix func √√√√√√√ (number: Int) -> Double {
     return sqrt(√√√√√√number)
 }
 
-prefix func √√√√√√√ (number: Float) -> Double {
+public prefix func √√√√√√√ (number: Float) -> Double {
     return sqrt(√√√√√√number)
 }
 
-prefix func √√√√√√√ (number: Double) -> Double {
+public prefix func √√√√√√√ (number: Double) -> Double {
     return sqrt(√√√√√√number)
 }
 
@@ -165,15 +165,15 @@ prefix func √√√√√√√ (number: Double) -> Double {
 
 prefix operator √√√√√√√√ { }
 
-prefix func √√√√√√√√ (number: Int) -> Double {
+public prefix func √√√√√√√√ (number: Int) -> Double {
     return sqrt(√√√√√√√number)
 }
 
-prefix func √√√√√√√√ (number: Float) -> Double {
+public prefix func √√√√√√√√ (number: Float) -> Double {
     return sqrt(√√√√√√√number)
 }
 
-prefix func √√√√√√√√ (number: Double) -> Double {
+public prefix func √√√√√√√√ (number: Double) -> Double {
     return sqrt(√√√√√√√number)
 }
 
@@ -186,15 +186,15 @@ prefix func √√√√√√√√ (number: Double) -> Double {
 
 prefix operator √√√√√√√√√ { }
 
-prefix func √√√√√√√√√ (number: Int) -> Double {
+public prefix func √√√√√√√√√ (number: Int) -> Double {
     return sqrt(√√√√√√√√number)
 }
 
-prefix func √√√√√√√√√ (number: Float) -> Double {
+public prefix func √√√√√√√√√ (number: Float) -> Double {
     return sqrt(√√√√√√√√number)
 }
 
-prefix func √√√√√√√√√ (number: Double) -> Double {
+public prefix func √√√√√√√√√ (number: Double) -> Double {
     return sqrt(√√√√√√√√number)
 }
 
@@ -207,15 +207,15 @@ prefix func √√√√√√√√√ (number: Double) -> Double {
 
 prefix operator √√√√√√√√√√ { }
 
-prefix func √√√√√√√√√√ (number: Int) -> Double {
+public prefix func √√√√√√√√√√ (number: Int) -> Double {
     return sqrt(√√√√√√√√number)
 }
 
-prefix func √√√√√√√√√√ (number: Float) -> Double {
+public prefix func √√√√√√√√√√ (number: Float) -> Double {
     return sqrt(√√√√√√√√√number)
 }
 
-prefix func √√√√√√√√√√ (number: Double) -> Double {
+public prefix func √√√√√√√√√√ (number: Double) -> Double {
     return sqrt(√√√√√√√√√number)
 }
 
