@@ -1,5 +1,5 @@
 //
-//  OperatorsEquation.swift
+//  OperatorsEquality.swift
 //  LaconicDemo
 //
 //  Created by Igor Matyushkin on 06.11.15.
