@@ -102,6 +102,49 @@ let container = ∑[view1, view2]
 
 ```
 
+### Views
+
+```swift
+let view1 = UIView()
+let containerView = UIView() // Will be used as superview for view1.
+
+
+/*
+ * Set {0, 0, 200, 200} frame for view1.
+ */
+
+view1 ~> CGRect(x: 0.0, y: 0.0, width: 200.0, height: 200.0)
+
+
+/*
+ * Set green background color for view1.
+ */
+
+view1 ~> .greenColor()
+
+
+/*
+ * Add view1 to containerView as a subview.
+ */
+
+view1 ~> containerView
+
+
+/*
+ * All those operations can be done in one line of code.
+ */
+
+view1 ~> CGRect(x: 0.0, y: 0.0, width: 200.0, height: 200.0) ~> .greenColor() ~> containerView
+
+
+/*
+ * Assume we want to set container's background color to blue.
+ */
+
+view1 ~> CGRect(x: 0.0, y: 0.0, width: 200.0, height: 200.0) ~> .greenColor() ~> (containerView ~> .blueColor())
+
+```
+
 ## License
 
 `Laconic` is available under the MIT license. See the `LICENSE` file for more info.
