@@ -117,6 +117,13 @@ view1 ~> CGRect(x: 0.0, y: 0.0, width: 200.0, height: 200.0)
 
 
 /*
+ * Also, it's possible to set frame by this command.
+ */
+
+view1 ~> (0.0, 0.0, 200.0, 200.0)
+
+
+/*
  * Set green background color for view1.
  */
 
@@ -134,14 +141,14 @@ view1 ~> containerView
  * All those operations can be done in one line of code.
  */
 
-view1 ~> CGRect(x: 0.0, y: 0.0, width: 200.0, height: 200.0) ~> .greenColor() ~> containerView
+view1 ~> (0.0, 0.0, 200.0, 200.0) ~> .greenColor() ~> containerView
 
 
 /*
  * Assume we want to set container's background color to blue.
  */
 
-view1 ~> CGRect(x: 0.0, y: 0.0, width: 200.0, height: 200.0) ~> .greenColor() ~> (containerView ~> .blueColor())
+view1 ~> (0.0, 0.0, 200.0, 200.0) ~> .greenColor() ~> (containerView ~> .blueColor())
 
 ```
 
