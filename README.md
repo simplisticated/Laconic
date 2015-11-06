@@ -88,7 +88,7 @@ let sumOfStrings = ∑["a", "b", "c"]    // abc
  * If you use ∑ operator with array of UIView objects,
  * you will get another UIView,
  * which is a superview for those elements in array.
- * In other words, each view in array will be added to container as superview
+ * In other words, each view in array will be added to container as a subview
  * and finally the container will be returned as a result of operation.
  */
 
