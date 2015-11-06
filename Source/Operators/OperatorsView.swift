@@ -38,8 +38,56 @@ Updates view's background color.
     - frame: New frame for specified view.
  
 - returns: View with updated frame.
- */
+*/
 func ~> (view: UIView, frame: CGRect) -> UIView {
+    view.frame = frame
+    return view
+}
+
+/**
+Updates view's frame.
+ 
+- Parameters:
+    - view: View, which frame will be updated.
+ 
+    - frameParameters: Structure containing values for new frame.
+ 
+- returns: View with updated frame.
+*/
+func ~> (view: UIView, frameParameters: (x: Int, y: Int, width: Int, height: Int)) -> UIView {
+    let frame = CGRect(x: frameParameters.x, y: frameParameters.y, width: frameParameters.width, height: frameParameters.height)
+    view.frame = frame
+    return view
+}
+
+/**
+Updates view's frame.
+ 
+- Parameters:
+    - view: View, which frame will be updated.
+ 
+    - frameParameters: Structure containing values for new frame.
+ 
+- returns: View with updated frame.
+*/
+func ~> (view: UIView, frameParameters: (x: CGFloat, y: CGFloat, width: CGFloat, height: CGFloat)) -> UIView {
+    let frame = CGRect(x: frameParameters.x, y: frameParameters.y, width: frameParameters.width, height: frameParameters.height)
+    view.frame = frame
+    return view
+}
+
+/**
+Updates view's frame.
+ 
+- Parameters:
+    - view: View, which frame will be updated.
+ 
+    - frameParameters: Structure containing values for new frame.
+ 
+- returns: View with updated frame.
+*/
+func ~> (view: UIView, frameParameters: (x: Double, y: Double, width: Double, height: Double)) -> UIView {
+    let frame = CGRect(x: frameParameters.x, y: frameParameters.y, width: frameParameters.width, height: frameParameters.height)
     view.frame = frame
     return view
 }
