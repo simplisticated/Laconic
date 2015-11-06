@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 
 // MARK: Sum
@@ -45,5 +46,25 @@ prefix func ∑ (numbers: [Double]) -> Double {
     }
     
     return sum
+}
+
+prefix func ∑ (strings: [String]) -> String {
+    var resultString = ""
+    
+    for item in strings {
+        resultString += item
+    }
+    
+    return resultString
+}
+
+prefix func ∑ (subviews: [UIView]) -> UIView {
+    let resultView = UIView()
+    
+    for item in subviews {
+        resultView.addSubview(item)
+    }
+    
+    return resultView
 }
 
