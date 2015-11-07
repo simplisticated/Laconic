@@ -182,7 +182,7 @@ view1 --> .greenColor()
  * Set frame for UIView object.
  */
 
-view1 --> CGRectMake(0.0, 0.0, 200.0, 200.0)
+view1 --> CGRect(x: 0, y: 0, width: 200, height: 200)
 
 
 /*
@@ -190,6 +190,20 @@ view1 --> CGRectMake(0.0, 0.0, 200.0, 200.0)
  */
 
 view1 --> (0, 0, 200, 200)
+
+
+/*
+ * Set top left coordinate for UIView object.
+ */
+
+view1 --> CGPoint(x: 20, y: 20)
+
+
+/*
+ * Set size for UIView object.
+ */
+
+view1 --> CGSize(width: 200, height: 200)
 
 
 /*
