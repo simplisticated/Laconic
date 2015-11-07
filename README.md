@@ -167,6 +167,113 @@ label1 --> "Hello" --> UIFont.systemFontOfSize(20.0) --> .Center --> view1.bound
 
 ```
 
+Here is the full list of supported operators for manipulating views:
+
+```swift
+/*
+ * Set background color for UIView object.
+ */
+
+let view1 = UIView()
+view1 --> .greenColor()
+
+
+/*
+ * Set frame for UIView object.
+ */
+
+view1 --> CGRectMake(0.0, 0.0, 200.0, 200.0)
+
+
+/*
+ * Set frame for UIView object.
+ */
+
+view1 --> (0, 0, 200, 200)
+
+
+/*
+ * Add UIView object as subview to another UIView object.
+ */
+
+view1 --> containerView
+
+
+/*
+ * Set text for UILabel object.
+ */
+
+let label1 = UILabel()
+label1 --> "Hello"
+
+
+/*
+ * Set attributed text for UILabel object.
+ */
+
+let textAttributes: [String : AnyObject] = [
+    NSFontAttributeName: UIFont.systemFontOfSize(20.0),
+    NSForegroundColorAttributeName: UIColor.blackColor(),
+    NSKernAttributeName: 0.5
+]
+
+let attributedText = NSAttributedString(string: "Hello", attributes: textAttributes)
+
+label1 --> attributedText
+
+
+/*
+ * Set font for UILabel object.
+ */
+
+label1 --> UIFont.systemFontOfSize(20.0)
+
+
+/*
+ * Set text alignment for UILabel object.
+ */
+
+label1 --> .Center
+
+
+/*
+ * Set text for UITextView object.
+ */
+
+let textView1 = UITextView()
+textView1 --> "Hello"
+
+
+/*
+ * Set attributed text for UITextView object.
+ */
+
+textView1 --> attributedText
+
+
+/*
+ * Set font for UITextView object.
+ */
+
+textView1 --> UIFont.systemFontOfSize(20.0)
+
+
+/*
+ * Set text alignment for UITextView object.
+ */
+
+textView1 --> .Center
+
+
+/*
+ * Set title for UINavigationItem object.
+ */
+
+let navigationItem1 = UINavigationItem()
+navigationItem1 --> "Hello"
+
+```
+
 ## License
 
 `Laconic` is available under the MIT license. See the `LICENSE` file for more info.
