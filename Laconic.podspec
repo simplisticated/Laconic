@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "Laconic"
-  s.version      = "1.5.1"
+  s.version      = "1.6"
   s.summary      = "Short and clear expressions in Swift."
 
   # This description is used to generate tags and improve search results.
