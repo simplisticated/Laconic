@@ -182,109 +182,120 @@ view1 --> .greenColor()
  * Set frame for UIView object.
  */
 
-view1 --> CGRectMake(0.0, 0.0, 200.0, 200.0)
+let view2 = UIView()
+view2 --> CGRectMake(0.0, 0.0, 200.0, 200.0)
 
 
 /*
  * Set frame for UIView object.
  */
 
-view1 --> (0, 0, 200, 200)
+let view3 = UIView()
+view3 --> (0, 0, 200, 200)
 
 
 /*
  * Add UIView object as subview to another UIView object.
  */
 
-view1 --> containerView
+let view4 = UIView()
+view4 --> containerView
 
 
 /*
  * Set text for UILabel object.
  */
 
-let label1 = UILabel()
-label1 --> "Hello"
+let label5 = UILabel()
+label5 --> "Hello"
 
 
 /*
  * Set attributed text for UILabel object.
  */
 
-let textAttributes: [String : AnyObject] = [
+let label6 = UILabel()
+
+let textAttributes6: [String : AnyObject] = [
     NSFontAttributeName: UIFont.systemFontOfSize(20.0),
     NSForegroundColorAttributeName: UIColor.blackColor(),
     NSKernAttributeName: 0.5
 ]
 
-let attributedText = NSAttributedString(string: "Hello", attributes: textAttributes)
+let attributedText6 = NSAttributedString(string: "Hello", attributes: textAttributes6)
 
-label1 --> attributedText
+label6 --> attributedText6
 
 
 /*
  * Set font for UILabel object.
  */
 
-label1 --> UIFont.systemFontOfSize(20.0)
+let label7 = UILabel7()
+label7 --> UIFont.systemFontOfSize(20.0)
 
 
 /*
  * Set text alignment for UILabel object.
  */
 
-label1 --> .Center
+let label8 = UILabel()
+label8 --> .Center
 
 
 /*
  * Set text for UITextView object.
  */
 
-let textView1 = UITextView()
-textView1 --> "Hello"
+let textView9 = UITextView()
+textView9 --> "Hello"
 
 
 /*
  * Set attributed text for UITextView object.
  */
 
-textView1 --> attributedText
+let textView10 = UITextView()
+textView10 --> attributedText
 
 
 /*
  * Set font for UITextView object.
  */
 
-textView1 --> UIFont.systemFontOfSize(20.0)
+let textView11 = UITextView()
+textView11 --> UIFont.systemFontOfSize(20.0)
 
 
 /*
  * Set text alignment for UITextView object.
  */
 
-textView1 --> .Center
+let textView12 = UITextView()
+textView12 --> .Center
 
 /*
  * Set title for UIButton object.
  */
 
-let button1 = UIButton()
-button1 --> "Hello"
+let button13 = UIButton()
+button13 --> "Hello"
 
 
 /*
  * Set attributed title for UIButton object.
  */
 
-button1 --> attributedText
+let button14 = UIButton()
+button14 --> attributedText
 
 
 /*
  * Set title for UINavigationItem object.
  */
 
-let navigationItem1 = UINavigationItem()
-navigationItem1 --> "Hello"
+let navigationItem15 = UINavigationItem()
+navigationItem15 --> "Hello"
 
 ```
 
