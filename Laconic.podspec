@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint Visuality.podspec' to ensure this is a
+#  Be sure to run `pod spec lint Laconic.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "Laconic"
-  s.version      = "1.6"
+  s.version      = "1.7"
   s.summary      = "Short and clear expressions in Swift."
 
   # This description is used to generate tags and improve search results.
