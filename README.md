@@ -256,7 +256,16 @@ textView9 --> "Hello"
  */
 
 let textView10 = UITextView()
-textView10 --> attributedText
+
+let textAttributes10: [String : AnyObject] = [
+    NSFontAttributeName: UIFont.systemFontOfSize(20.0),
+    NSForegroundColorAttributeName: UIColor.blackColor(),
+    NSKernAttributeName: 0.5
+]
+
+let attributedText10 = NSAttributedString(string: "Hello", attributes: textAttributes10)
+
+textView10 --> attributedText10
 
 
 /*
