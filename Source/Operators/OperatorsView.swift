@@ -228,6 +228,36 @@ public func --> (textView: UITextView, textAlignment: NSTextAlignment) -> UIText
 }
 
 /**
+Updates button's title.
+ 
+- Parameters:
+    - button: Button, which title will be updated.
+ 
+    - title: New title for specified button.
+ 
+- returns: Button with updated title.
+*/
+public func --> (button: UIButton, title: String) -> UIButton {
+    button.setTitle(title, forState: .Normal)
+    return button
+}
+
+/**
+Updates button's attributed title.
+ 
+- Parameters:
+    - button: Button, which attributed title will be updated.
+ 
+    - attributedTitle: New attributed title for specified button.
+ 
+- returns: Button with updated attributed title.
+*/
+public func --> (button: UIButton, attributedTitle: NSAttributedString) -> UIButton {
+    button.setAttributedTitle(attributedTitle, forState: .Normal)
+    return button
+}
+
+/**
 Updates navigation item's title.
  
 - Parameters:
