@@ -182,129 +182,109 @@ view1 --> .greenColor()
  * Set frame for UIView object.
  */
 
-let view2 = UIView()
-view2 --> CGRectMake(0.0, 0.0, 200.0, 200.0)
+view1 --> CGRectMake(0.0, 0.0, 200.0, 200.0)
 
 
 /*
  * Set frame for UIView object.
  */
 
-let view3 = UIView()
-view3 --> (0, 0, 200, 200)
+view1 --> (0, 0, 200, 200)
 
 
 /*
  * Add UIView object as subview to another UIView object.
  */
 
-let view4 = UIView()
-view4 --> containerView
+view1 --> containerView
 
 
 /*
  * Set text for UILabel object.
  */
 
-let label5 = UILabel()
-label5 --> "Hello"
+let label1 = UILabel()
+label1 --> "Hello"
 
 
 /*
  * Set attributed text for UILabel object.
  */
 
-let label6 = UILabel()
-
-let textAttributes6: [String : AnyObject] = [
+let textAttributes: [String : AnyObject] = [
     NSFontAttributeName: UIFont.systemFontOfSize(20.0),
     NSForegroundColorAttributeName: UIColor.blackColor(),
     NSKernAttributeName: 0.5
 ]
 
-let attributedText6 = NSAttributedString(string: "Hello", attributes: textAttributes6)
+let attributedText = NSAttributedString(string: "Hello", attributes: textAttributes)
 
-label6 --> attributedText6
+label1 --> attributedText
 
 
 /*
  * Set font for UILabel object.
  */
 
-let label7 = UILabel7()
-label7 --> UIFont.systemFontOfSize(20.0)
+label1 --> UIFont.systemFontOfSize(20.0)
 
 
 /*
  * Set text alignment for UILabel object.
  */
 
-let label8 = UILabel()
-label8 --> .Center
+label1 --> .Center
 
 
 /*
  * Set text for UITextView object.
  */
 
-let textView9 = UITextView()
-textView9 --> "Hello"
+let textView1 = UITextView()
+textView1 --> "Hello"
 
 
 /*
  * Set attributed text for UITextView object.
  */
 
-let textView10 = UITextView()
-
-let textAttributes10: [String : AnyObject] = [
-    NSFontAttributeName: UIFont.systemFontOfSize(20.0),
-    NSForegroundColorAttributeName: UIColor.blackColor(),
-    NSKernAttributeName: 0.5
-]
-
-let attributedText10 = NSAttributedString(string: "Hello", attributes: textAttributes10)
-
-textView10 --> attributedText10
+textView1 --> attributedText
 
 
 /*
  * Set font for UITextView object.
  */
 
-let textView11 = UITextView()
-textView11 --> UIFont.systemFontOfSize(20.0)
+textView1 --> UIFont.systemFontOfSize(20.0)
 
 
 /*
  * Set text alignment for UITextView object.
  */
 
-let textView12 = UITextView()
-textView12 --> .Center
+textView1 --> .Center
 
 /*
  * Set title for UIButton object.
  */
 
-let button13 = UIButton()
-button13 --> "Hello"
+let button1 = UIButton()
+button1 --> "Hello"
 
 
 /*
  * Set attributed title for UIButton object.
  */
 
-let button14 = UIButton()
-button14 --> attributedText
+button1 --> attributedText
 
 
 /*
  * Set title for UINavigationItem object.
  */
 
-let navigationItem15 = UINavigationItem()
-navigationItem15 --> "Hello"
+let navigationItem1 = UINavigationItem()
+navigationItem1 --> "Hello"
 
 ```
 
