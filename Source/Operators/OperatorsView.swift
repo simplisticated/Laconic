@@ -93,6 +93,40 @@ public func --> (view: UIView, frameParameters: (x: Double, y: Double, width: Do
 }
 
 /**
+Updates view's top left coordinate.
+ 
+- Parameters:
+    - view: View, which top left coordinate will be updated.
+ 
+    - topLeftCoordinate: Point containing top left coordinate for view.
+ 
+- returns: View with updated top left coordinate.
+*/
+public func --> (view: UIView, topLeftCoordinate: CGPoint) -> UIView {
+    var frameForView = view.frame
+    frameForView.origin = topLeftCoordinate
+    view.frame = frameForView
+    return view
+}
+
+/**
+Updates view's size.
+ 
+- Parameters:
+    - view: View, which size will be updated.
+ 
+    - size: New size for view.
+ 
+- returns: View with updated size.
+*/
+public func --> (view: UIView, size: CGSize) -> UIView {
+    var frameForView = view.frame
+    frameForView.size = size
+    view.frame = frameForView
+    return view
+}
+
+/**
 Updates view's background color.
  
 - Parameters:
