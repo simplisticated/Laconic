@@ -24,7 +24,7 @@ Updates view's background color.
  
 - returns: View with updated background color.
 */
-func ~> (view: UIView, backgroundColor: UIColor) -> UIView {
+public func ~> (view: UIView, backgroundColor: UIColor) -> UIView {
     view.backgroundColor = backgroundColor
     return view
 }
@@ -39,7 +39,7 @@ Updates view's background color.
  
 - returns: View with updated frame.
 */
-func ~> (view: UIView, frame: CGRect) -> UIView {
+public func ~> (view: UIView, frame: CGRect) -> UIView {
     view.frame = frame
     return view
 }
@@ -54,7 +54,7 @@ Updates view's frame.
  
 - returns: View with updated frame.
 */
-func ~> (view: UIView, frameParameters: (x: Int, y: Int, width: Int, height: Int)) -> UIView {
+public func ~> (view: UIView, frameParameters: (x: Int, y: Int, width: Int, height: Int)) -> UIView {
     let frame = CGRect(x: frameParameters.x, y: frameParameters.y, width: frameParameters.width, height: frameParameters.height)
     view.frame = frame
     return view
@@ -70,7 +70,7 @@ Updates view's frame.
  
 - returns: View with updated frame.
 */
-func ~> (view: UIView, frameParameters: (x: CGFloat, y: CGFloat, width: CGFloat, height: CGFloat)) -> UIView {
+public func ~> (view: UIView, frameParameters: (x: CGFloat, y: CGFloat, width: CGFloat, height: CGFloat)) -> UIView {
     let frame = CGRect(x: frameParameters.x, y: frameParameters.y, width: frameParameters.width, height: frameParameters.height)
     view.frame = frame
     return view
@@ -86,7 +86,7 @@ Updates view's frame.
  
 - returns: View with updated frame.
 */
-func ~> (view: UIView, frameParameters: (x: Double, y: Double, width: Double, height: Double)) -> UIView {
+public func ~> (view: UIView, frameParameters: (x: Double, y: Double, width: Double, height: Double)) -> UIView {
     let frame = CGRect(x: frameParameters.x, y: frameParameters.y, width: frameParameters.width, height: frameParameters.height)
     view.frame = frame
     return view
@@ -102,7 +102,7 @@ Updates view's background color.
  
 - returns: View, that was added to container.
 */
-func ~> (view: UIView, container: UIView) -> UIView {
+public func ~> (view: UIView, container: UIView) -> UIView {
     container.addSubview(view)
     return view
 }
