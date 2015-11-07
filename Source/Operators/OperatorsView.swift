@@ -12,7 +12,7 @@ import UIKit
 
 // MARK: Manipulating views
 
-infix operator ~> { associativity left precedence 160 }
+infix operator ~> { associativity left }
 
 /**
 Updates view's background color.
