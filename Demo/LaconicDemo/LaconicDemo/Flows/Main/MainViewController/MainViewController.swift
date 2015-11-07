@@ -41,7 +41,7 @@ class MainViewController: UIViewController {
         
         // Initialize navigation bar
         
-        navigationItem.title = "Laconic"
+        navigationItem --> "Laconic"
         
         
         // Initialize numbers label
@@ -54,7 +54,7 @@ class MainViewController: UIViewController {
         
         let collectionOfExampleExpressions = exampleExpressions()
         let textForLabelNumbers = collectionOfExampleExpressions.joinWithSeparator("\n\n")
-        labelNumbers.text = textForLabelNumbers
+        labelNumbers --> textForLabelNumbers
     }
     
     override func viewWillLayoutSubviews() {
