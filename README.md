@@ -106,7 +106,8 @@ let container = ∑[view1, view2]
 
 ```swift
 let view1 = UIView()
-let containerView = UIView() // Will be used as superview for view1.
+let label1 = UILabel()
+let containerView = UIView() // Will be used as superview for view1
 
 
 /*
@@ -149,6 +150,20 @@ view1 --> (0, 0, 200, 200) --> .greenColor() --> containerView
  */
 
 view1 --> (0, 0, 200, 200) --> .greenColor() --> (containerView --> .blueColor())
+
+
+/*
+ * Set label's text to "Hello" and add this label to view1.
+ */
+
+label1 --> "Hello" --> view1.bounds --> view1
+
+
+/*
+ * Set label's text, font, text alignment, frame and finally add to view1.
+ */
+
+label1 --> "Hello" --> UIFont.systemFontOfSize(20.0) --> .Center --> view1.bounds --> view1
 
 ```
 
