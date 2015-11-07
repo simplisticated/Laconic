@@ -46,15 +46,12 @@ class MainViewController: UIViewController {
         
         // Initialize numbers label
         
-        labelNumbers = UILabel()
-        labelNumbers --> view.bounds --> view
-        
-        labelNumbers.numberOfLines = 0
-        labelNumbers.textAlignment = .Center
-        
         let collectionOfExampleExpressions = exampleExpressions()
         let textForLabelNumbers = collectionOfExampleExpressions.joinWithSeparator("\n\n")
-        labelNumbers --> textForLabelNumbers
+        
+        labelNumbers = UILabel()
+        labelNumbers.numberOfLines = 0
+        labelNumbers --> UIFont.systemFontOfSize(17.0) --> .Center --> textForLabelNumbers --> view.bounds --> view
     }
     
     override func viewWillLayoutSubviews() {
