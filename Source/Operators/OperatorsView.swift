@@ -107,3 +107,78 @@ public func --> (view: UIView, container: UIView) -> UIView {
     return view
 }
 
+/**
+Updates label's text.
+
+- Parameters:
+    - label: Label, which text will be updated.
+ 
+    - text: New text for specified label.
+ 
+- returns: Label with updated text.
+*/
+public func --> (label: UILabel, text: String) -> UILabel {
+    label.text = text
+    return label
+}
+
+/**
+Updates label's attributed text.
+ 
+- Parameters:
+    - label: Label, which attributed text will be updated.
+ 
+    - attributedText: New attributed text for specified label.
+ 
+- returns: Label with updated attributed text.
+*/
+public func --> (label: UILabel, attributedText: NSAttributedString) -> UILabel {
+    label.attributedText = attributedText
+    return label
+}
+
+/**
+Updates text view's text.
+ 
+- Parameters:
+    - textView: Text view, which text will be updated.
+ 
+    - text: New text for specified text view.
+ 
+- returns: Text view with updated text.
+*/
+public func --> (textView: UITextView, text: String) -> UITextView {
+    textView.text = text
+    return textView
+}
+
+/**
+Updates text view's attributed text.
+ 
+- Parameters:
+    - textView: Text view, which attributed text will be updated.
+ 
+    - attributedText: New attributed text for specified text view.
+ 
+- returns: Text view with updated attributed text.
+*/
+public func --> (textView: UITextView, attributedText: NSAttributedString) -> UITextView {
+    textView.attributedText = attributedText
+    return textView
+}
+
+/**
+Updates navigation item's title.
+ 
+- Parameters:
+    - navigationItem: Navigation item, which title will be updated.
+ 
+    - text: New title for specified navigation item.
+ 
+- returns: Navigation item with updated title.
+*/
+public func --> (navigationItem: UINavigationItem, title: String) -> UINavigationItem {
+    navigationItem.title = title
+    return navigationItem
+}
+
