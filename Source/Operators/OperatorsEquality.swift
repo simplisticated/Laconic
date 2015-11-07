@@ -1,6 +1,6 @@
 //
 //  OperatorsEquality.swift
-//  LaconicDemo
+//  Laconic
 //
 //  Created by Igor Matyushkin on 06.11.15.
 //  Copyright © 2015 Igor Matyushkin. All rights reserved.
