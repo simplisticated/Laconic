@@ -138,6 +138,36 @@ public func --> (label: UILabel, attributedText: NSAttributedString) -> UILabel 
 }
 
 /**
+Updates label's font.
+ 
+- Parameters:
+    - label: Label, which font will be updated.
+ 
+    - font: New font for specified label.
+ 
+- returns: Label with updated font.
+*/
+public func --> (label: UILabel, font: UIFont) -> UILabel {
+    label.font = font
+    return label
+}
+
+/**
+Updates label's text alignment.
+ 
+- Parameters:
+    - label: Label, which text alignment will be updated.
+ 
+    - textAlignment: New text alignment for specified label.
+ 
+- returns: Label with updated text alignment.
+*/
+public func --> (label: UILabel, textAlignment: NSTextAlignment) -> UILabel {
+    label.textAlignment = textAlignment
+    return label
+}
+
+/**
 Updates text view's text.
  
 - Parameters:
@@ -164,6 +194,36 @@ Updates text view's attributed text.
 */
 public func --> (textView: UITextView, attributedText: NSAttributedString) -> UITextView {
     textView.attributedText = attributedText
+    return textView
+}
+
+/**
+Updates text view's font.
+ 
+- Parameters:
+    - textView: Text view, which font will be updated.
+ 
+    - font: New font for specified text view.
+ 
+- returns: Text view with updated font.
+*/
+public func --> (textView: UITextView, font: UIFont) -> UITextView {
+    textView.font = font
+    return textView
+}
+
+/**
+Updates text view's text alignment.
+ 
+- Parameters:
+    - textView: Text view, which text alignment will be updated.
+ 
+    - textAlignment: New text alignment for specified text view.
+ 
+- returns: Text view with updated text alignment.
+*/
+public func --> (textView: UITextView, textAlignment: NSTextAlignment) -> UITextView {
+    textView.textAlignment = textAlignment
     return textView
 }
 
