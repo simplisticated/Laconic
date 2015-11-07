@@ -47,7 +47,7 @@ class MainViewController: UIViewController {
         // Initialize numbers label
         
         labelNumbers = UILabel()
-        labelNumbers ~> view.bounds ~> view
+        labelNumbers --> view.bounds --> view
         
         labelNumbers.numberOfLines = 0
         labelNumbers.textAlignment = .Center
@@ -63,7 +63,7 @@ class MainViewController: UIViewController {
         
         // Update numbers label
         
-        labelNumbers ~> view.bounds
+        labelNumbers --> view.bounds
     }
     
     override func didReceiveMemoryWarning() {
