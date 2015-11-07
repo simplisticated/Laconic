@@ -8,7 +8,7 @@
 
 import Foundation
 
-// MARK: Square root of 1st degree
+// MARK: One square root
 
 /*
  * Type Alt+V to use this operator.
@@ -17,13 +17,13 @@ import Foundation
 prefix operator √ { }
 
 public prefix func √ (number: Int) -> Double {
-    let doubleNumber = Double(number)
-    return sqrt(doubleNumber)
+    let doubleValue = Double(number)
+    return sqrt(doubleValue)
 }
 
 public prefix func √ (number: Float) -> Double {
-    let doubleNumber = Double(number)
-    return sqrt(doubleNumber)
+    let doubleValue = Double(number)
+    return sqrt(doubleValue)
 }
 
 public prefix func √ (number: Double) -> Double {
@@ -31,7 +31,7 @@ public prefix func √ (number: Double) -> Double {
 }
 
 
-// MARK: Square root of 2nd degree
+// MARK: Two square roots
 
 /*
  * Press Alt+V two times to use this operator.
@@ -40,19 +40,19 @@ public prefix func √ (number: Double) -> Double {
 prefix operator √√ { }
 
 public prefix func √√ (number: Int) -> Double {
-    return sqrt(√number)
+    return √(√number)
 }
 
 public prefix func √√ (number: Float) -> Double {
-    return sqrt(√number)
+    return √(√number)
 }
 
 public prefix func √√ (number: Double) -> Double {
-    return sqrt(√number)
+    return √(√number)
 }
 
 
-// MARK: Square root of 3rd degree
+// MARK: Three square roots
 
 /*
  * Press Alt+V three times to use this operator.
@@ -61,19 +61,19 @@ public prefix func √√ (number: Double) -> Double {
 prefix operator √√√ { }
 
 public prefix func √√√ (number: Int) -> Double {
-    return sqrt(√√number)
+    return √(√√number)
 }
 
 public prefix func √√√ (number: Float) -> Double {
-    return sqrt(√√number)
+    return √(√√number)
 }
 
 public prefix func √√√ (number: Double) -> Double {
-    return sqrt(√√number)
+    return √(√√number)
 }
 
 
-// MARK: Square root of 4th degree
+// MARK: Four square roots
 
 /*
  * Press Alt+V four times to use this operator.
@@ -82,19 +82,19 @@ public prefix func √√√ (number: Double) -> Double {
 prefix operator √√√√ { }
 
 public prefix func √√√√ (number: Int) -> Double {
-    return sqrt(√√√number)
+    return √(√√√number)
 }
 
 public prefix func √√√√ (number: Float) -> Double {
-    return sqrt(√√√number)
+    return √(√√√number)
 }
 
 public prefix func √√√√ (number: Double) -> Double {
-    return sqrt(√√√number)
+    return √(√√√number)
 }
 
 
-// MARK: Square root of 5th degree
+// MARK: Five square roots
 
 /*
  * Press Alt+V five times to use this operator.
@@ -103,19 +103,19 @@ public prefix func √√√√ (number: Double) -> Double {
 prefix operator √√√√√ { }
 
 public prefix func √√√√√ (number: Int) -> Double {
-    return sqrt(√√√√number)
+    return √(√√√√number)
 }
 
 public prefix func √√√√√ (number: Float) -> Double {
-    return sqrt(√√√√number)
+    return √(√√√√number)
 }
 
 public prefix func √√√√√ (number: Double) -> Double {
-    return sqrt(√√√√number)
+    return √(√√√√number)
 }
 
 
-// MARK: Square root of 6th degree
+// MARK: Six square roots
 
 /*
  * Press Alt+V six times to use this operator.
@@ -124,19 +124,19 @@ public prefix func √√√√√ (number: Double) -> Double {
 prefix operator √√√√√√ { }
 
 public prefix func √√√√√√ (number: Int) -> Double {
-    return sqrt(√√√√√number)
+    return √(√√√√√number)
 }
 
 public prefix func √√√√√√ (number: Float) -> Double {
-    return sqrt(√√√√√number)
+    return √(√√√√√number)
 }
 
 public prefix func √√√√√√ (number: Double) -> Double {
-    return sqrt(√√√√√number)
+    return √(√√√√√number)
 }
 
 
-// MARK: Square root of 7th degree
+// MARK: Seven square roots
 
 /*
  * Press Alt+V seven times to use this operator.
@@ -145,19 +145,19 @@ public prefix func √√√√√√ (number: Double) -> Double {
 prefix operator √√√√√√√ { }
 
 public prefix func √√√√√√√ (number: Int) -> Double {
-    return sqrt(√√√√√√number)
+    return √(√√√√√√number)
 }
 
 public prefix func √√√√√√√ (number: Float) -> Double {
-    return sqrt(√√√√√√number)
+    return √(√√√√√√number)
 }
 
 public prefix func √√√√√√√ (number: Double) -> Double {
-    return sqrt(√√√√√√number)
+    return √(√√√√√√number)
 }
 
 
-// MARK: Square root of 8th degree
+// MARK: Eight square roots
 
 /*
  * Press Alt+V eight times to use this operator.
@@ -166,19 +166,19 @@ public prefix func √√√√√√√ (number: Double) -> Double {
 prefix operator √√√√√√√√ { }
 
 public prefix func √√√√√√√√ (number: Int) -> Double {
-    return sqrt(√√√√√√√number)
+    return √(√√√√√√√number)
 }
 
 public prefix func √√√√√√√√ (number: Float) -> Double {
-    return sqrt(√√√√√√√number)
+    return √(√√√√√√√number)
 }
 
 public prefix func √√√√√√√√ (number: Double) -> Double {
-    return sqrt(√√√√√√√number)
+    return √(√√√√√√√number)
 }
 
 
-// MARK: Square root of 9th degree
+// MARK: Nine square roots
 
 /*
  * Press Alt+V nine times to use this operator.
@@ -187,19 +187,19 @@ public prefix func √√√√√√√√ (number: Double) -> Double {
 prefix operator √√√√√√√√√ { }
 
 public prefix func √√√√√√√√√ (number: Int) -> Double {
-    return sqrt(√√√√√√√√number)
+    return √(√√√√√√√√number)
 }
 
 public prefix func √√√√√√√√√ (number: Float) -> Double {
-    return sqrt(√√√√√√√√number)
+    return √(√√√√√√√√number)
 }
 
 public prefix func √√√√√√√√√ (number: Double) -> Double {
-    return sqrt(√√√√√√√√number)
+    return √(√√√√√√√√number)
 }
 
 
-// MARK: Square root of 10th degree
+// MARK: Ten square roots
 
 /*
  * Press Alt+V ten times to use this operator.
@@ -208,14 +208,14 @@ public prefix func √√√√√√√√√ (number: Double) -> Double {
 prefix operator √√√√√√√√√√ { }
 
 public prefix func √√√√√√√√√√ (number: Int) -> Double {
-    return sqrt(√√√√√√√√number)
+    return √(√√√√√√√√number)
 }
 
 public prefix func √√√√√√√√√√ (number: Float) -> Double {
-    return sqrt(√√√√√√√√√number)
+    return √(√√√√√√√√√number)
 }
 
 public prefix func √√√√√√√√√√ (number: Double) -> Double {
-    return sqrt(√√√√√√√√√number)
+    return √(√√√√√√√√√number)
 }
 
