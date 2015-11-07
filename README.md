@@ -264,6 +264,20 @@ textView1 --> UIFont.systemFontOfSize(20.0)
 
 textView1 --> .Center
 
+/*
+ * Set title for UIButton object.
+ */
+
+let button1 = UIButton()
+button1 --> "Hello"
+
+
+/*
+ * Set attributed title for UIButton object.
+ */
+
+button1 --> attributedText
+
 
 /*
  * Set title for UINavigationItem object.
