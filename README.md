@@ -300,6 +300,13 @@ button1 --> attributedText
 let navigationItem1 = UINavigationItem()
 navigationItem1 --> "Hello"
 
+
+/*
+ * Remove view from superview.
+ */
+
+view1-->
+
 ```
 
 ## License
