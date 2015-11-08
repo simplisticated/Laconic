@@ -306,3 +306,16 @@ public func --> (navigationItem: UINavigationItem, title: String) -> UINavigatio
     return navigationItem
 }
 
+
+postfix operator --> { }
+
+/**
+Removes view from superview.
+
+- Parameters:
+    - view: View, which will be removed from its superview.
+*/
+public postfix func --> (view: UIView) {
+    view.removeFromSuperview()
+}
+
