@@ -127,7 +127,7 @@ public func --> (view: UIView, size: CGSize) -> UIView {
 }
 
 /**
-Updates view's background color.
+Moves view to container.
  
 - Parameters:
     - view: View, that will be added to container.
