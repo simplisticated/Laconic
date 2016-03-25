@@ -309,6 +309,32 @@ view1-->
 
 ```
 
+### Manipulations with objects
+
+```swift
+let object = SomeClass()
+
+object.use { (object) in
+    // Do several operations with object...
+}
+
+object.useAs(NSString.self) { (object) in
+    // Do something with object casted to NSString type...
+}
+```
+
+Both methods `use` and `useAs` support chain calls, so it's possible to write something like this:
+
+```swift
+object.use { (object) in
+    // Do several operations with object...
+}.useAs(NSString.self) { (object) in
+    // Do something with object casted to NSString type...
+}.useAs(NSNumber.self) { (object) in
+    // Do something with object casted to NSNumber type...
+}
+```
+
 ## License
 
 `Laconic` is available under the MIT license. See the `LICENSE` file for more info.
