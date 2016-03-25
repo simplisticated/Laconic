@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "Laconic"
-  s.version      = "1.8"
+  s.version      = "1.9"
   s.summary      = "Short and clear expressions in Swift."
 
   # This description is used to generate tags and improve search results.
@@ -56,7 +56,7 @@ This library brings short and clear expressions into your Swift code.
   s.author             = { "Igor Matyushkin" => "igormatyushkin014@gmail.com" }
   #s.author    = "Igor Matyushkin"
   # s.authors            = { "Igor Matyushkin" => "igormatyushkin014@gmail.com" }
-  s.social_media_url   = "https://twitter.com/igormatyushkin1"
+  #s.social_media_url   = "https://twitter.com/igormatyushkin1"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
