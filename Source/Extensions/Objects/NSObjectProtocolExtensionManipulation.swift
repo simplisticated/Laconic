@@ -18,15 +18,15 @@ public extension NSObjectProtocol {
     
     // MARK: Public object methods
     
-    public func use(block: ((object: Self) -> Void)) {
-        let a = NSNotificationCenter.defaultCenter()
-        a.use { (object) in
-        }
+    public func use(block: ((object: Self) -> Void)) -> Self {
+        block(object: self)
+        return self
     }
     
-    public func useAs<ObjectType>(castToType: ObjectType.Type, use: (object: ObjectType) -> Void) {
+    public func useAs<ObjectType>(castToType: ObjectType.Type, use: (object: ObjectType) -> Void) -> Self {
         let castedObject = self as! ObjectType
         use(object: castedObject)
+        return self
     }
     
     
