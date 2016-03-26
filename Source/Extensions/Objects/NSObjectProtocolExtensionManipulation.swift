@@ -23,9 +23,9 @@ public extension NSObjectProtocol {
         return self
     }
     
-    public func useAs<ObjectType>(castToType: ObjectType.Type, use: (object: ObjectType) -> Void) -> Self {
+    public func useAs<ObjectType>(castToType: ObjectType.Type, withBlock block: (object: ObjectType) -> Void) -> Self {
         let castedObject = self as! ObjectType
-        use(object: castedObject)
+        block(object: castedObject)
         return self
     }
     
