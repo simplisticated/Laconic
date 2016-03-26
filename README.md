@@ -335,6 +335,17 @@ object.use { (object) in
 }
 ```
 
+Since two methods above return receiver's instance, you can use them with initializer like this:
+
+```swift
+let view = UIView().use { (object) in
+    object --> .blueColor()
+    object.clipsToBounds = true
+}
+```
+
+This approach makes code more demonstrative and clear.
+
 ## License
 
 `Laconic` is available under the MIT license. See the `LICENSE` file for more info.
