@@ -260,20 +260,6 @@ public func --> (button: UIButton, title: String) -> UIButton {
 }
 
 /**
-Updates image view's image.
- 
-- Parameters:
-    - imageView: Image view, whose image will be updated.
-    - image: New image for specified image view.
-
-- returns: Image view with updated image.
-*/
-public func --> (imageView: UIImageView, image: UIImage?) -> UIImageView {
-    imageView.image = image
-    return imageView
-}
-
-/**
 Updates button's attributed title.
  
 - Parameters:
@@ -286,6 +272,20 @@ Updates button's attributed title.
 public func --> (button: UIButton, attributedTitle: NSAttributedString) -> UIButton {
     button.setAttributedTitle(attributedTitle, forState: .Normal)
     return button
+}
+
+/**
+Updates image view's image.
+
+- Parameters:
+    - imageView: Image view, whose image will be updated.
+    - image: New image for specified image view.
+
+- returns: Image view with updated image.
+*/
+public func --> (imageView: UIImageView, image: UIImage?) -> UIImageView {
+    imageView.image = image
+    return imageView
 }
 
 /**
