@@ -18,8 +18,7 @@ infix operator --> { associativity left }
 Updates view's background color.
  
 - Parameters:
-    - view: View, which background color will be updated.
- 
+    - view: View, whose background color will be updated.
     - backgroundColor: New background color for specified view.
  
 - returns: View with updated background color.
@@ -33,8 +32,7 @@ public func --> (view: UIView, backgroundColor: UIColor) -> UIView {
 Updates view's background color.
  
 - Parameters:
-    - view: View, which frame will be updated.
- 
+    - view: View, whose frame will be updated.
     - frame: New frame for specified view.
  
 - returns: View with updated frame.
@@ -48,8 +46,7 @@ public func --> (view: UIView, frame: CGRect) -> UIView {
 Updates view's frame.
  
 - Parameters:
-    - view: View, which frame will be updated.
- 
+    - view: View, whose frame will be updated.
     - frameParameters: Structure containing values for new frame.
  
 - returns: View with updated frame.
@@ -64,8 +61,7 @@ public func --> (view: UIView, frameParameters: (x: Int, y: Int, width: Int, hei
 Updates view's frame.
  
 - Parameters:
-    - view: View, which frame will be updated.
- 
+    - view: View, whose frame will be updated.
     - frameParameters: Structure containing values for new frame.
  
 - returns: View with updated frame.
@@ -80,8 +76,7 @@ public func --> (view: UIView, frameParameters: (x: CGFloat, y: CGFloat, width: 
 Updates view's frame.
  
 - Parameters:
-    - view: View, which frame will be updated.
- 
+    - view: View, whose frame will be updated.
     - frameParameters: Structure containing values for new frame.
  
 - returns: View with updated frame.
@@ -96,8 +91,7 @@ public func --> (view: UIView, frameParameters: (x: Double, y: Double, width: Do
 Updates view's top left coordinate.
  
 - Parameters:
-    - view: View, which top left coordinate will be updated.
- 
+    - view: View, whose top left coordinate will be updated.
     - topLeftCoordinate: Point containing top left coordinate for view.
  
 - returns: View with updated top left coordinate.
@@ -113,8 +107,7 @@ public func --> (view: UIView, topLeftCoordinate: CGPoint) -> UIView {
 Updates view's size.
  
 - Parameters:
-    - view: View, which size will be updated.
- 
+    - view: View, whose size will be updated.
     - size: New size for view.
  
 - returns: View with updated size.
@@ -131,7 +124,6 @@ Moves view to container.
  
 - Parameters:
     - view: View, that will be added to container.
- 
     - container: Superview for specified view.
  
 - returns: View, that was added to container.
@@ -145,8 +137,7 @@ public func --> (view: UIView, container: UIView) -> UIView {
 Updates label's text.
 
 - Parameters:
-    - label: Label, which text will be updated.
- 
+    - label: Label, whose text will be updated.
     - text: New text for specified label.
  
 - returns: Label with updated text.
@@ -160,8 +151,7 @@ public func --> (label: UILabel, text: String) -> UILabel {
 Updates label's attributed text.
  
 - Parameters:
-    - label: Label, which attributed text will be updated.
- 
+    - label: Label, whose attributed text will be updated.
     - attributedText: New attributed text for specified label.
  
 - returns: Label with updated attributed text.
@@ -175,8 +165,7 @@ public func --> (label: UILabel, attributedText: NSAttributedString) -> UILabel 
 Updates label's font.
  
 - Parameters:
-    - label: Label, which font will be updated.
- 
+    - label: Label, whose font will be updated.
     - font: New font for specified label.
  
 - returns: Label with updated font.
@@ -190,8 +179,7 @@ public func --> (label: UILabel, font: UIFont) -> UILabel {
 Updates label's text alignment.
  
 - Parameters:
-    - label: Label, which text alignment will be updated.
- 
+    - label: Label, whose text alignment will be updated.
     - textAlignment: New text alignment for specified label.
  
 - returns: Label with updated text alignment.
@@ -205,8 +193,7 @@ public func --> (label: UILabel, textAlignment: NSTextAlignment) -> UILabel {
 Updates text view's text.
  
 - Parameters:
-    - textView: Text view, which text will be updated.
- 
+    - textView: Text view, whose text will be updated.
     - text: New text for specified text view.
  
 - returns: Text view with updated text.
@@ -220,8 +207,7 @@ public func --> (textView: UITextView, text: String) -> UITextView {
 Updates text view's attributed text.
  
 - Parameters:
-    - textView: Text view, which attributed text will be updated.
- 
+    - textView: Text view, whose attributed text will be updated.
     - attributedText: New attributed text for specified text view.
  
 - returns: Text view with updated attributed text.
@@ -235,8 +221,7 @@ public func --> (textView: UITextView, attributedText: NSAttributedString) -> UI
 Updates text view's font.
  
 - Parameters:
-    - textView: Text view, which font will be updated.
- 
+    - textView: Text view, whose font will be updated.
     - font: New font for specified text view.
  
 - returns: Text view with updated font.
@@ -250,8 +235,7 @@ public func --> (textView: UITextView, font: UIFont) -> UITextView {
 Updates text view's text alignment.
  
 - Parameters:
-    - textView: Text view, which text alignment will be updated.
- 
+    - textView: Text view, whose text alignment will be updated.
     - textAlignment: New text alignment for specified text view.
  
 - returns: Text view with updated text alignment.
@@ -265,8 +249,7 @@ public func --> (textView: UITextView, textAlignment: NSTextAlignment) -> UIText
 Updates button's title.
  
 - Parameters:
-    - button: Button, which title will be updated.
- 
+    - button: Button, whose title will be updated.
     - title: New title for specified button.
  
 - returns: Button with updated title.
@@ -277,10 +260,24 @@ public func --> (button: UIButton, title: String) -> UIButton {
 }
 
 /**
+Updates image view's image.
+ 
+- Parameters:
+    - imageView: Image view, whose image will be updated.
+    - image: New image for specified image view.
+
+- returns: Image view with updated image.
+*/
+public func --> (imageView: UIImageView, image: UIImage?) -> UIImageView {
+    imageView.image = image
+    return imageView
+}
+
+/**
 Updates button's attributed title.
  
 - Parameters:
-    - button: Button, which attributed title will be updated.
+    - button: Button, whose attributed title will be updated.
  
     - attributedTitle: New attributed title for specified button.
  
@@ -295,8 +292,7 @@ public func --> (button: UIButton, attributedTitle: NSAttributedString) -> UIBut
 Updates navigation item's title.
  
 - Parameters:
-    - navigationItem: Navigation item, which title will be updated.
- 
+    - navigationItem: Navigation item, whose title will be updated.
     - text: New title for specified navigation item.
  
 - returns: Navigation item with updated title.
@@ -313,7 +309,7 @@ postfix operator --> { }
 Removes view from superview.
 
 - Parameters:
-    - view: View, which will be removed from its superview.
+    - view: View that will be removed from its superview.
 */
 public postfix func --> (view: UIView) {
     view.removeFromSuperview()

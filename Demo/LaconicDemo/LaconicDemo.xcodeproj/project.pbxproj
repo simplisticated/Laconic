@@ -16,8 +16,6 @@
 		69723FB21BED4AE7008D8D3D /* OperatorsEquality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69723FB11BED4AE7008D8D3D /* OperatorsEquality.swift */; };
 		69723FB41BED4E05008D8D3D /* OperatorsSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69723FB31BED4E05008D8D3D /* OperatorsSum.swift */; };
 		69723FB61BED6D6D008D8D3D /* OperatorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69723FB51BED6D6D008D8D3D /* OperatorsView.swift */; };
-		6974AD7A1CA4E9E8008655F8 /* NSObjectProtocolExtensionManipulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6974AD791CA4E9E8008655F8 /* NSObjectProtocolExtensionManipulation.swift */; };
-		698B85DA1CA723CD006513CC /* OperatorsClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698B85D91CA723CD006513CC /* OperatorsClasses.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,8 +30,6 @@
 		69723FB11BED4AE7008D8D3D /* OperatorsEquality.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperatorsEquality.swift; sourceTree = "<group>"; };
 		69723FB31BED4E05008D8D3D /* OperatorsSum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperatorsSum.swift; sourceTree = "<group>"; };
 		69723FB51BED6D6D008D8D3D /* OperatorsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperatorsView.swift; sourceTree = "<group>"; };
-		6974AD791CA4E9E8008655F8 /* NSObjectProtocolExtensionManipulation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObjectProtocolExtensionManipulation.swift; sourceTree = "<group>"; };
-		698B85D91CA723CD006513CC /* OperatorsClasses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperatorsClasses.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +108,6 @@
 		69723FAA1BED4561008D8D3D /* Laconic */ = {
 			isa = PBXGroup;
 			children = (
-				6974AD741CA4E473008655F8 /* Extensions */,
 				69723FAE1BED4939008D8D3D /* Operators */,
 			);
 			name = Laconic;
@@ -126,25 +121,8 @@
 				69723FB11BED4AE7008D8D3D /* OperatorsEquality.swift */,
 				69723FB31BED4E05008D8D3D /* OperatorsSum.swift */,
 				69723FB51BED6D6D008D8D3D /* OperatorsView.swift */,
-				698B85D91CA723CD006513CC /* OperatorsClasses.swift */,
 			);
 			path = Operators;
-			sourceTree = "<group>";
-		};
-		6974AD741CA4E473008655F8 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				6974AD781CA4E9E8008655F8 /* Objects */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		6974AD781CA4E9E8008655F8 /* Objects */ = {
-			isa = PBXGroup;
-			children = (
-				6974AD791CA4E9E8008655F8 /* NSObjectProtocolExtensionManipulation.swift */,
-			);
-			path = Objects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,9 +200,7 @@
 				69723F911BED443D008D8D3D /* AppDelegate.swift in Sources */,
 				69723FA71BED44B6008D8D3D /* MainViewController.swift in Sources */,
 				69723FB01BED4939008D8D3D /* OperatorsSqrt.swift in Sources */,
-				6974AD7A1CA4E9E8008655F8 /* NSObjectProtocolExtensionManipulation.swift in Sources */,
 				69723FB21BED4AE7008D8D3D /* OperatorsEquality.swift in Sources */,
-				698B85DA1CA723CD006513CC /* OperatorsClasses.swift in Sources */,
 				69723FB41BED4E05008D8D3D /* OperatorsSum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
