@@ -294,6 +294,16 @@ button1 --> attributedText
 
 
 /*
+ * Set image to UIImageView object.
+ */
+
+let image = UIImage(named: "image_name")
+
+let imageView1 = UIImageView()
+imageView1 --> image
+
+
+/*
  * Set title for UINavigationItem object.
  */
 
