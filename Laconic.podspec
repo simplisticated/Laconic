@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "Laconic"
-  s.version      = "1.9.3"
+  s.version      = "3.0"
   s.summary      = "Short and clear expressions in Swift."
 
   # This description is used to generate tags and improve search results.
@@ -65,7 +65,7 @@ This library brings short and clear expressions into your Swift code.
   #
 
   # s.platform     = :ios
-  s.platform     = :ios, "8.0"
+  s.platform     = :ios, "9.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -91,7 +91,7 @@ This library brings short and clear expressions into your Swift code.
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Source", "Source/**/*"
+  s.source_files  = "Laconic", "Laconic/**/*"
   #s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
