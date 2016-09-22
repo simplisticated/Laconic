@@ -16,16 +16,19 @@ import Foundation
 
 prefix operator √ { }
 
+@discardableResult
 public prefix func √ (number: Int) -> Double {
     let doubleValue = Double(number)
     return sqrt(doubleValue)
 }
 
+@discardableResult
 public prefix func √ (number: Float) -> Double {
     let doubleValue = Double(number)
     return sqrt(doubleValue)
 }
 
+@discardableResult
 public prefix func √ (number: Double) -> Double {
     return sqrt(number)
 }
@@ -39,14 +42,17 @@ public prefix func √ (number: Double) -> Double {
 
 prefix operator √√ { }
 
+@discardableResult
 public prefix func √√ (number: Int) -> Double {
     return √(√number)
 }
 
+@discardableResult
 public prefix func √√ (number: Float) -> Double {
     return √(√number)
 }
 
+@discardableResult
 public prefix func √√ (number: Double) -> Double {
     return √(√number)
 }
@@ -60,14 +66,17 @@ public prefix func √√ (number: Double) -> Double {
 
 prefix operator √√√ { }
 
+@discardableResult
 public prefix func √√√ (number: Int) -> Double {
     return √(√√number)
 }
 
+@discardableResult
 public prefix func √√√ (number: Float) -> Double {
     return √(√√number)
 }
 
+@discardableResult
 public prefix func √√√ (number: Double) -> Double {
     return √(√√number)
 }
@@ -81,14 +90,17 @@ public prefix func √√√ (number: Double) -> Double {
 
 prefix operator √√√√ { }
 
+@discardableResult
 public prefix func √√√√ (number: Int) -> Double {
     return √(√√√number)
 }
 
+@discardableResult
 public prefix func √√√√ (number: Float) -> Double {
     return √(√√√number)
 }
 
+@discardableResult
 public prefix func √√√√ (number: Double) -> Double {
     return √(√√√number)
 }
@@ -102,14 +114,17 @@ public prefix func √√√√ (number: Double) -> Double {
 
 prefix operator √√√√√ { }
 
+@discardableResult
 public prefix func √√√√√ (number: Int) -> Double {
     return √(√√√√number)
 }
 
+@discardableResult
 public prefix func √√√√√ (number: Float) -> Double {
     return √(√√√√number)
 }
 
+@discardableResult
 public prefix func √√√√√ (number: Double) -> Double {
     return √(√√√√number)
 }
@@ -123,14 +138,17 @@ public prefix func √√√√√ (number: Double) -> Double {
 
 prefix operator √√√√√√ { }
 
+@discardableResult
 public prefix func √√√√√√ (number: Int) -> Double {
     return √(√√√√√number)
 }
 
+@discardableResult
 public prefix func √√√√√√ (number: Float) -> Double {
     return √(√√√√√number)
 }
 
+@discardableResult
 public prefix func √√√√√√ (number: Double) -> Double {
     return √(√√√√√number)
 }
@@ -144,14 +162,17 @@ public prefix func √√√√√√ (number: Double) -> Double {
 
 prefix operator √√√√√√√ { }
 
+@discardableResult
 public prefix func √√√√√√√ (number: Int) -> Double {
     return √(√√√√√√number)
 }
 
+@discardableResult
 public prefix func √√√√√√√ (number: Float) -> Double {
     return √(√√√√√√number)
 }
 
+@discardableResult
 public prefix func √√√√√√√ (number: Double) -> Double {
     return √(√√√√√√number)
 }
@@ -165,14 +186,17 @@ public prefix func √√√√√√√ (number: Double) -> Double {
 
 prefix operator √√√√√√√√ { }
 
+@discardableResult
 public prefix func √√√√√√√√ (number: Int) -> Double {
     return √(√√√√√√√number)
 }
 
+@discardableResult
 public prefix func √√√√√√√√ (number: Float) -> Double {
     return √(√√√√√√√number)
 }
 
+@discardableResult
 public prefix func √√√√√√√√ (number: Double) -> Double {
     return √(√√√√√√√number)
 }
@@ -186,14 +210,17 @@ public prefix func √√√√√√√√ (number: Double) -> Double {
 
 prefix operator √√√√√√√√√ { }
 
+@discardableResult
 public prefix func √√√√√√√√√ (number: Int) -> Double {
     return √(√√√√√√√√number)
 }
 
+@discardableResult
 public prefix func √√√√√√√√√ (number: Float) -> Double {
     return √(√√√√√√√√number)
 }
 
+@discardableResult
 public prefix func √√√√√√√√√ (number: Double) -> Double {
     return √(√√√√√√√√number)
 }
@@ -207,14 +234,17 @@ public prefix func √√√√√√√√√ (number: Double) -> Double {
 
 prefix operator √√√√√√√√√√ { }
 
+@discardableResult
 public prefix func √√√√√√√√√√ (number: Int) -> Double {
     return √(√√√√√√√√number)
 }
 
+@discardableResult
 public prefix func √√√√√√√√√√ (number: Float) -> Double {
     return √(√√√√√√√√√number)
 }
 
+@discardableResult
 public prefix func √√√√√√√√√√ (number: Double) -> Double {
     return √(√√√√√√√√√number)
 }

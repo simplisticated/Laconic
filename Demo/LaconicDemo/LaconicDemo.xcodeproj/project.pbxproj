@@ -12,10 +12,10 @@
 		69723F9B1BED443D008D8D3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69723F991BED443D008D8D3D /* LaunchScreen.storyboard */; };
 		69723FA71BED44B6008D8D3D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69723FA51BED44B6008D8D3D /* MainViewController.swift */; };
 		69723FA81BED44B6008D8D3D /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69723FA61BED44B6008D8D3D /* MainViewController.xib */; };
-		69723FB01BED4939008D8D3D /* OperatorsSqrt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69723FAF1BED4939008D8D3D /* OperatorsSqrt.swift */; };
-		69723FB21BED4AE7008D8D3D /* OperatorsEquality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69723FB11BED4AE7008D8D3D /* OperatorsEquality.swift */; };
-		69723FB41BED4E05008D8D3D /* OperatorsSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69723FB31BED4E05008D8D3D /* OperatorsSum.swift */; };
-		69723FB61BED6D6D008D8D3D /* OperatorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69723FB51BED6D6D008D8D3D /* OperatorsView.swift */; };
+		69C26E541D94106A005CE3ED /* OperatorsEquality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C26E501D94106A005CE3ED /* OperatorsEquality.swift */; };
+		69C26E551D94106A005CE3ED /* OperatorsSqrt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C26E511D94106A005CE3ED /* OperatorsSqrt.swift */; };
+		69C26E561D94106A005CE3ED /* OperatorsSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C26E521D94106A005CE3ED /* OperatorsSum.swift */; };
+		69C26E571D94106A005CE3ED /* OperatorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C26E531D94106A005CE3ED /* OperatorsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,10 +26,10 @@
 		69723F9C1BED443D008D8D3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69723FA51BED44B6008D8D3D /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		69723FA61BED44B6008D8D3D /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
-		69723FAF1BED4939008D8D3D /* OperatorsSqrt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperatorsSqrt.swift; sourceTree = "<group>"; };
-		69723FB11BED4AE7008D8D3D /* OperatorsEquality.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperatorsEquality.swift; sourceTree = "<group>"; };
-		69723FB31BED4E05008D8D3D /* OperatorsSum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperatorsSum.swift; sourceTree = "<group>"; };
-		69723FB51BED6D6D008D8D3D /* OperatorsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperatorsView.swift; sourceTree = "<group>"; };
+		69C26E501D94106A005CE3ED /* OperatorsEquality.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperatorsEquality.swift; sourceTree = "<group>"; };
+		69C26E511D94106A005CE3ED /* OperatorsSqrt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperatorsSqrt.swift; sourceTree = "<group>"; };
+		69C26E521D94106A005CE3ED /* OperatorsSum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperatorsSum.swift; sourceTree = "<group>"; };
+		69C26E531D94106A005CE3ED /* OperatorsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperatorsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				69723FA21BED44AA008D8D3D /* Flows */,
-				69723FA91BED4552008D8D3D /* Libraries */,
+				69C26E4D1D941060005CE3ED /* Libraries */,
 				69723F901BED443D008D8D3D /* AppDelegate.swift */,
 				69723F971BED443D008D8D3D /* Assets.xcassets */,
 				69723F991BED443D008D8D3D /* LaunchScreen.storyboard */,
@@ -97,30 +97,30 @@
 			path = MainViewController;
 			sourceTree = "<group>";
 		};
-		69723FA91BED4552008D8D3D /* Libraries */ = {
+		69C26E4D1D941060005CE3ED /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				69723FAA1BED4561008D8D3D /* Laconic */,
+				69C26E4E1D94106A005CE3ED /* Laconic */,
 			);
 			path = Libraries;
 			sourceTree = "<group>";
 		};
-		69723FAA1BED4561008D8D3D /* Laconic */ = {
+		69C26E4E1D94106A005CE3ED /* Laconic */ = {
 			isa = PBXGroup;
 			children = (
-				69723FAE1BED4939008D8D3D /* Operators */,
+				69C26E4F1D94106A005CE3ED /* Operators */,
 			);
 			name = Laconic;
-			path = ../../../../Source;
+			path = ../../../../Laconic;
 			sourceTree = "<group>";
 		};
-		69723FAE1BED4939008D8D3D /* Operators */ = {
+		69C26E4F1D94106A005CE3ED /* Operators */ = {
 			isa = PBXGroup;
 			children = (
-				69723FAF1BED4939008D8D3D /* OperatorsSqrt.swift */,
-				69723FB11BED4AE7008D8D3D /* OperatorsEquality.swift */,
-				69723FB31BED4E05008D8D3D /* OperatorsSum.swift */,
-				69723FB51BED6D6D008D8D3D /* OperatorsView.swift */,
+				69C26E501D94106A005CE3ED /* OperatorsEquality.swift */,
+				69C26E511D94106A005CE3ED /* OperatorsSqrt.swift */,
+				69C26E521D94106A005CE3ED /* OperatorsSum.swift */,
+				69C26E531D94106A005CE3ED /* OperatorsView.swift */,
 			);
 			path = Operators;
 			sourceTree = "<group>";
@@ -157,6 +157,8 @@
 				TargetAttributes = {
 					69723F8C1BED443D008D8D3D = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = AFEG59EG8E;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -196,12 +198,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69723FB61BED6D6D008D8D3D /* OperatorsView.swift in Sources */,
+				69C26E571D94106A005CE3ED /* OperatorsView.swift in Sources */,
+				69C26E541D94106A005CE3ED /* OperatorsEquality.swift in Sources */,
 				69723F911BED443D008D8D3D /* AppDelegate.swift in Sources */,
 				69723FA71BED44B6008D8D3D /* MainViewController.swift in Sources */,
-				69723FB01BED4939008D8D3D /* OperatorsSqrt.swift in Sources */,
-				69723FB21BED4AE7008D8D3D /* OperatorsEquality.swift in Sources */,
-				69723FB41BED4E05008D8D3D /* OperatorsSum.swift in Sources */,
+				69C26E551D94106A005CE3ED /* OperatorsSqrt.swift in Sources */,
+				69C26E561D94106A005CE3ED /* OperatorsSum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,11 +306,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = AFEG59EG8E;
 				INFOPLIST_FILE = LaconicDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.visuality.LaconicDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -316,11 +320,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = AFEG59EG8E;
 				INFOPLIST_FILE = LaconicDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.visuality.LaconicDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

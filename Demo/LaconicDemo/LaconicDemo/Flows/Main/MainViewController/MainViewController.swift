@@ -30,7 +30,7 @@ class MainViewController: UIViewController {
     
     // MARK: Variables & properties
     
-    private var labelNumbers: UILabel!
+    fileprivate var labelNumbers: UILabel!
     
     
     // MARK: Public methods
@@ -47,11 +47,15 @@ class MainViewController: UIViewController {
         // Initialize numbers label
         
         let collectionOfExampleExpressions = exampleExpressions()
-        let textForLabelNumbers = collectionOfExampleExpressions.joinWithSeparator("\n\n")
+        let textForLabelNumbers = collectionOfExampleExpressions.joined(separator: "\n\n")
         
         labelNumbers = UILabel()
         labelNumbers.numberOfLines = 0
-        labelNumbers --> UIFont.systemFontOfSize(17.0) --> .Center --> textForLabelNumbers --> view.bounds --> view
+        labelNumbers --> UIFont.systemFont(ofSize: 17.0)
+        labelNumbers --> .center
+        labelNumbers --> textForLabelNumbers
+        labelNumbers --> view.bounds
+        labelNumbers --> view
     }
     
     override func viewWillLayoutSubviews() {
@@ -71,7 +75,7 @@ class MainViewController: UIViewController {
     
     // MARK: Private methods
     
-    private func exampleExpressions() -> [String] {
+    fileprivate func exampleExpressions() -> [String] {
         // Obtain expression 1
         
         let leftPartForExpression1 = "√4"

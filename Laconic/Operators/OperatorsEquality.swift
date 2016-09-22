@@ -16,14 +16,17 @@ import Foundation
 
 infix operator ≤ { }
 
+@discardableResult
 public func ≤ (left: Int, right: Int) -> Bool {
     return left <= right
 }
 
+@discardableResult
 public func ≤ (left: Float, right: Float) -> Bool {
     return left <= right
 }
 
+@discardableResult
 public func ≤ (left: Double, right: Double) -> Bool {
     return left <= right
 }
@@ -37,14 +40,17 @@ public func ≤ (left: Double, right: Double) -> Bool {
 
 infix operator ≥ { }
 
+@discardableResult
 public func ≥ (left: Int, right: Int) -> Bool {
     return left >= right
 }
 
+@discardableResult
 public func ≥ (left: Float, right: Float) -> Bool {
     return left >= right
 }
 
+@discardableResult
 public func ≥ (left: Double, right: Double) -> Bool {
     return left >= right
 }

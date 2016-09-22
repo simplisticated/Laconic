@@ -26,6 +26,7 @@ Sum of numbers in array.
  
  - returns: Sum of elements in specified array.
 */
+@discardableResult
 public prefix func ∑ (numbers: [Int]) -> Int {
     var sum: Int = 0
     
@@ -44,6 +45,7 @@ Sum of numbers in array.
  
 - returns: Sum of elements in specified array.
 */
+@discardableResult
 public prefix func ∑ (numbers: [Float]) -> Float {
     var sum: Float = 0.0
     
@@ -62,6 +64,7 @@ Sum of numbers in array.
  
 - returns: Sum of elements in specified array.
 */
+@discardableResult
 public prefix func ∑ (numbers: [Double]) -> Double {
     var sum: Double = 0.0
     
@@ -80,6 +83,7 @@ Concatenates strings in array.
  
 - returns: Concatenation of strings in specified array.
 */
+@discardableResult
 public prefix func ∑ (strings: [String]) -> String {
     var resultString = ""
     
@@ -98,6 +102,7 @@ Fills container with views from array.
  
 - returns: Container view that includes elements from specified array, added as subviews.
 */
+@discardableResult
 public prefix func ∑ (subviews: [UIView]) -> UIView {
     let resultView = UIView()
     

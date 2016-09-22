@@ -23,6 +23,7 @@ Updates view's background color.
  
 - returns: View with updated background color.
 */
+@discardableResult
 public func --> (view: UIView, backgroundColor: UIColor) -> UIView {
     view.backgroundColor = backgroundColor
     return view
@@ -37,6 +38,7 @@ Updates view's background color.
  
 - returns: View with updated frame.
 */
+@discardableResult
 public func --> (view: UIView, frame: CGRect) -> UIView {
     view.frame = frame
     return view
@@ -51,6 +53,7 @@ Updates view's frame.
  
 - returns: View with updated frame.
 */
+@discardableResult
 public func --> (view: UIView, frameParameters: (x: Int, y: Int, width: Int, height: Int)) -> UIView {
     let frame = CGRect(x: frameParameters.x, y: frameParameters.y, width: frameParameters.width, height: frameParameters.height)
     view.frame = frame
@@ -66,6 +69,7 @@ Updates view's frame.
  
 - returns: View with updated frame.
 */
+@discardableResult
 public func --> (view: UIView, frameParameters: (x: CGFloat, y: CGFloat, width: CGFloat, height: CGFloat)) -> UIView {
     let frame = CGRect(x: frameParameters.x, y: frameParameters.y, width: frameParameters.width, height: frameParameters.height)
     view.frame = frame
@@ -81,6 +85,7 @@ Updates view's frame.
  
 - returns: View with updated frame.
 */
+@discardableResult
 public func --> (view: UIView, frameParameters: (x: Double, y: Double, width: Double, height: Double)) -> UIView {
     let frame = CGRect(x: frameParameters.x, y: frameParameters.y, width: frameParameters.width, height: frameParameters.height)
     view.frame = frame
@@ -96,6 +101,7 @@ Updates view's top left coordinate.
  
 - returns: View with updated top left coordinate.
 */
+@discardableResult
 public func --> (view: UIView, topLeftCoordinate: CGPoint) -> UIView {
     var frameForView = view.frame
     frameForView.origin = topLeftCoordinate
@@ -112,6 +118,7 @@ Updates view's size.
  
 - returns: View with updated size.
 */
+@discardableResult
 public func --> (view: UIView, size: CGSize) -> UIView {
     var frameForView = view.frame
     frameForView.size = size
@@ -128,6 +135,7 @@ Moves view to container.
  
 - returns: View, that was added to container.
 */
+@discardableResult
 public func --> (view: UIView, container: UIView) -> UIView {
     container.addSubview(view)
     return view
@@ -142,6 +150,7 @@ Updates label's text.
  
 - returns: Label with updated text.
 */
+@discardableResult
 public func --> (label: UILabel, text: String) -> UILabel {
     label.text = text
     return label
@@ -156,6 +165,7 @@ Updates label's attributed text.
  
 - returns: Label with updated attributed text.
 */
+@discardableResult
 public func --> (label: UILabel, attributedText: NSAttributedString) -> UILabel {
     label.attributedText = attributedText
     return label
@@ -170,6 +180,7 @@ Updates label's font.
  
 - returns: Label with updated font.
 */
+@discardableResult
 public func --> (label: UILabel, font: UIFont) -> UILabel {
     label.font = font
     return label
@@ -184,6 +195,7 @@ Updates label's text alignment.
  
 - returns: Label with updated text alignment.
 */
+@discardableResult
 public func --> (label: UILabel, textAlignment: NSTextAlignment) -> UILabel {
     label.textAlignment = textAlignment
     return label
@@ -198,6 +210,7 @@ Updates text view's text.
  
 - returns: Text view with updated text.
 */
+@discardableResult
 public func --> (textView: UITextView, text: String) -> UITextView {
     textView.text = text
     return textView
@@ -212,6 +225,7 @@ Updates text view's attributed text.
  
 - returns: Text view with updated attributed text.
 */
+@discardableResult
 public func --> (textView: UITextView, attributedText: NSAttributedString) -> UITextView {
     textView.attributedText = attributedText
     return textView
@@ -226,6 +240,7 @@ Updates text view's font.
  
 - returns: Text view with updated font.
 */
+@discardableResult
 public func --> (textView: UITextView, font: UIFont) -> UITextView {
     textView.font = font
     return textView
@@ -240,6 +255,7 @@ Updates text view's text alignment.
  
 - returns: Text view with updated text alignment.
 */
+@discardableResult
 public func --> (textView: UITextView, textAlignment: NSTextAlignment) -> UITextView {
     textView.textAlignment = textAlignment
     return textView
@@ -254,8 +270,9 @@ Updates button's title.
  
 - returns: Button with updated title.
 */
+@discardableResult
 public func --> (button: UIButton, title: String) -> UIButton {
-    button.setTitle(title, forState: .Normal)
+    button.setTitle(title, for: .normal)
     return button
 }
 
@@ -269,8 +286,9 @@ Updates button's attributed title.
  
 - returns: Button with updated attributed title.
 */
+@discardableResult
 public func --> (button: UIButton, attributedTitle: NSAttributedString) -> UIButton {
-    button.setAttributedTitle(attributedTitle, forState: .Normal)
+    button.setAttributedTitle(attributedTitle, for: .normal)
     return button
 }
 
@@ -283,6 +301,7 @@ Updates image view's image.
 
 - returns: Image view with updated image.
 */
+@discardableResult
 public func --> (imageView: UIImageView, image: UIImage?) -> UIImageView {
     imageView.image = image
     return imageView
@@ -297,6 +316,7 @@ Updates navigation item's title.
  
 - returns: Navigation item with updated title.
 */
+@discardableResult
 public func --> (navigationItem: UINavigationItem, title: String) -> UINavigationItem {
     navigationItem.title = title
     return navigationItem
@@ -311,6 +331,7 @@ Removes view from superview.
 - Parameters:
     - view: View that will be removed from its superview.
 */
+@discardableResult
 public postfix func --> (view: UIView) {
     view.removeFromSuperview()
 }
