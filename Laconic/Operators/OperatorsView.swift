@@ -12,7 +12,11 @@ import UIKit
 
 // MARK: Manipulating views
 
-infix operator --> { associativity left }
+precedencegroup AssociativityLeft {
+    associativity: left
+}
+
+infix operator --> : AssociativityLeft
 
 /**
 Updates view's background color.
@@ -322,8 +326,7 @@ public func --> (navigationItem: UINavigationItem, title: String) -> UINavigatio
     return navigationItem
 }
 
-
-postfix operator --> { }
+postfix operator -->
 
 /**
 Removes view from superview.
@@ -332,7 +335,8 @@ Removes view from superview.
     - view: View that will be removed from its superview.
 */
 @discardableResult
-public postfix func --> (view: UIView) {
+public postfix func --> (view: UIView) -> UIView {
     view.removeFromSuperview()
+    return view
 }
 
