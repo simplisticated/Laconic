@@ -14,7 +14,7 @@ import Foundation
  * Type Alt+V to use this operator.
  */
 
-prefix operator √ { }
+prefix operator √
 
 @discardableResult
 public prefix func √ (number: Int) -> Double {
@@ -40,7 +40,7 @@ public prefix func √ (number: Double) -> Double {
  * Press Alt+V two times to use this operator.
  */
 
-prefix operator √√ { }
+prefix operator √√
 
 @discardableResult
 public prefix func √√ (number: Int) -> Double {
@@ -64,7 +64,7 @@ public prefix func √√ (number: Double) -> Double {
  * Press Alt+V three times to use this operator.
  */
 
-prefix operator √√√ { }
+prefix operator √√√
 
 @discardableResult
 public prefix func √√√ (number: Int) -> Double {
@@ -88,7 +88,7 @@ public prefix func √√√ (number: Double) -> Double {
  * Press Alt+V four times to use this operator.
  */
 
-prefix operator √√√√ { }
+prefix operator √√√√
 
 @discardableResult
 public prefix func √√√√ (number: Int) -> Double {
@@ -112,7 +112,7 @@ public prefix func √√√√ (number: Double) -> Double {
  * Press Alt+V five times to use this operator.
  */
 
-prefix operator √√√√√ { }
+prefix operator √√√√√
 
 @discardableResult
 public prefix func √√√√√ (number: Int) -> Double {
@@ -136,7 +136,7 @@ public prefix func √√√√√ (number: Double) -> Double {
  * Press Alt+V six times to use this operator.
  */
 
-prefix operator √√√√√√ { }
+prefix operator √√√√√√
 
 @discardableResult
 public prefix func √√√√√√ (number: Int) -> Double {
@@ -160,7 +160,7 @@ public prefix func √√√√√√ (number: Double) -> Double {
  * Press Alt+V seven times to use this operator.
  */
 
-prefix operator √√√√√√√ { }
+prefix operator √√√√√√√
 
 @discardableResult
 public prefix func √√√√√√√ (number: Int) -> Double {
@@ -184,7 +184,7 @@ public prefix func √√√√√√√ (number: Double) -> Double {
  * Press Alt+V eight times to use this operator.
  */
 
-prefix operator √√√√√√√√ { }
+prefix operator √√√√√√√√
 
 @discardableResult
 public prefix func √√√√√√√√ (number: Int) -> Double {
@@ -208,7 +208,7 @@ public prefix func √√√√√√√√ (number: Double) -> Double {
  * Press Alt+V nine times to use this operator.
  */
 
-prefix operator √√√√√√√√√ { }
+prefix operator √√√√√√√√√
 
 @discardableResult
 public prefix func √√√√√√√√√ (number: Int) -> Double {
@@ -232,7 +232,7 @@ public prefix func √√√√√√√√√ (number: Double) -> Double {
  * Press Alt+V ten times to use this operator.
  */
 
-prefix operator √√√√√√√√√√ { }
+prefix operator √√√√√√√√√√
 
 @discardableResult
 public prefix func √√√√√√√√√√ (number: Int) -> Double {
