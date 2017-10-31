@@ -3,16 +3,17 @@
 </p>
 
 <p align="center">
-<a href="https://swift.org"><img src="https://img.shields.io/badge/Swift-3.0-orange.svg?style=flat"></a>
+<a href="https://swift.org"><img src="https://img.shields.io/badge/Swift-4.0-orange.svg?style=flat"></a>
 <a href="https://cocoapods.org"><img src="https://img.shields.io/cocoapods/v/Laconic.svg?maxAge=2592000"></a>
 <a href="https://cocoapods.org"><img src="https://img.shields.io/cocoapods/dt/Laconic.svg?maxAge=2592000"></a>
 <a href="https://tldrlegal.com/license/mit-license"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat"></a>
 </p>
 
 # Laconic
+
 Short and clear expressions in Swift.
 
-##How To Get Started
+## How To Get Started
 
 - Copy content of `Laconic` folder to your project.
 
@@ -22,10 +23,8 @@ or
 
 ## Requirements
 
-* iOS 9.0 and later
-* Xcode 8 and later
-
-**Note**: For Swift 2.x use `Laconic v1.9.3`. For Swift 3.0 use `Laconic v3.0`.
+* iOS 9 and later
+* Xcode 9 and later
 
 ## Usage
 
@@ -39,13 +38,11 @@ or
 let someNumber = 4
 let squareRoot = √someNumber                  // 2
 
-
 /*
  * Square root of 8th degree.
  */
  
 let anotherSquareRoot = √√√65536              // 4
-
 
 /*
  * Square root of 16th degree.
@@ -85,13 +82,11 @@ let numbers = [
 
 let sumOfNumbers = ∑numbers            // 721
 
-
 /*
  * Also, you can get sum of strings.
  */
 
 let sumOfStrings = ∑["a", "b", "c"]    // abc
-
 
 /*
  * If you use ∑ operator with array of UIView objects,
@@ -108,7 +103,6 @@ let view2 = UIView(frame: CGRect(x: 20.0, y: 0.0, width: 20.0, height: 20.0))
 view2.backgroundColor = .blueColor()
 
 let container = ∑[view1, view2]
-
 ```
 
 ### Views
@@ -118,13 +112,11 @@ let view1 = UIView()
 let label1 = UILabel()
 let containerView = UIView() // Will be used as superview for view1
 
-
 /*
  * Set {0, 0, 200, 200} frame for view1.
  */
 
 view1 --> CGRect(x: 0, y: 0, width: 200, height: 200)
-
 
 /*
  * Also, it's possible to set frame by this command.
@@ -132,13 +124,11 @@ view1 --> CGRect(x: 0, y: 0, width: 200, height: 200)
 
 view1 --> (0, 0, 200, 200)
 
-
 /*
  * Set green background color for view1.
  */
 
 view1 --> .greenColor()
-
 
 /*
  * Add view1 to containerView as a subview.
@@ -146,13 +136,11 @@ view1 --> .greenColor()
 
 view1 --> containerView
 
-
 /*
  * All those operations can be done in one line of code.
  */
 
 view1 --> (0, 0, 200, 200) --> .greenColor() --> containerView
-
 
 /*
  * Assume we want to set container's background color to blue.
@@ -160,20 +148,17 @@ view1 --> (0, 0, 200, 200) --> .greenColor() --> containerView
 
 view1 --> (0, 0, 200, 200) --> .greenColor() --> (containerView --> .blueColor())
 
-
 /*
  * Set label's text to "Hello" and add this label to view1.
  */
 
 label1 --> "Hello" --> view1.bounds --> view1
 
-
 /*
  * Set label's text, font, text alignment, frame and finally add to view1.
  */
 
 label1 --> "Hello" --> UIFont.systemFontOfSize(20.0) --> .Center --> view1.bounds --> view1
-
 ```
 
 Here is the full list of supported operators for manipulating views:
@@ -186,20 +171,17 @@ Here is the full list of supported operators for manipulating views:
 let view1 = UIView()
 view1 --> .greenColor()
 
-
 /*
  * Set frame for UIView object.
  */
 
 view1 --> CGRect(x: 0, y: 0, width: 200, height: 200)
 
-
 /*
  * Set frame for UIView object.
  */
 
 view1 --> (0, 0, 200, 200)
-
 
 /*
  * Set top left coordinate for UIView object.
@@ -221,14 +203,12 @@ view1 --> CGSize(width: 200, height: 200)
 
 view1 --> containerView
 
-
 /*
  * Set text for UILabel object.
  */
 
 let label1 = UILabel()
 label1 --> "Hello"
-
 
 /*
  * Set attributed text for UILabel object.
@@ -244,7 +224,6 @@ let attributedText = NSAttributedString(string: "Hello", attributes: textAttribu
 
 label1 --> attributedText
 
-
 /*
  * Set font for UILabel object.
  */
@@ -258,7 +237,6 @@ label1 --> UIFont.systemFontOfSize(20.0)
 
 label1 --> .Center
 
-
 /*
  * Set text for UITextView object.
  */
@@ -266,20 +244,17 @@ label1 --> .Center
 let textView1 = UITextView()
 textView1 --> "Hello"
 
-
 /*
  * Set attributed text for UITextView object.
  */
 
 textView1 --> attributedText
 
-
 /*
  * Set font for UITextView object.
  */
 
 textView1 --> UIFont.systemFontOfSize(20.0)
-
 
 /*
  * Set text alignment for UITextView object.
@@ -294,13 +269,11 @@ textView1 --> .Center
 let button1 = UIButton()
 button1 --> "Hello"
 
-
 /*
  * Set attributed title for UIButton object.
  */
 
 button1 --> attributedText
-
 
 /*
  * Set image to UIImageView object.
@@ -310,7 +283,6 @@ let image = UIImage(named: "image_name")
 
 let imageView1 = UIImageView()
 imageView1 --> image
-
 
 /*
  * Set title for UINavigationItem object.
@@ -325,7 +297,6 @@ navigationItem1 --> "Hello"
  */
 
 view1-->
-
 ```
 
 ## License
