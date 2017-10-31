@@ -14,7 +14,11 @@ import Foundation
  * Press Alt+, to use this operator.
  */
 
-infix operator ≤ { }
+precedencegroup AssociativityLeft {
+    associativity: left
+}
+
+infix operator ≤: AssociativityLeft
 
 @discardableResult
 public func ≤ (left: Int, right: Int) -> Bool {
@@ -31,14 +35,13 @@ public func ≤ (left: Double, right: Double) -> Bool {
     return left <= right
 }
 
-
 // MARK: Bigger or equal
 
 /*
  * Press Alt+. to use this operator.
  */
 
-infix operator ≥ { }
+infix operator ≥: AssociativityLeft
 
 @discardableResult
 public func ≥ (left: Int, right: Int) -> Bool {
@@ -54,4 +57,3 @@ public func ≥ (left: Float, right: Float) -> Bool {
 public func ≥ (left: Double, right: Double) -> Bool {
     return left >= right
 }
-
