@@ -16,7 +16,7 @@ import UIKit
  * Press Alt+W to use this operator.
  */
 
-prefix operator ∑ { }
+prefix operator ∑
 
 /**
 Sum of numbers in array.
